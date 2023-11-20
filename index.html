@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      img {
+        width: 20rem;
+        height: 20rem;
+        border-radius: 10rem;
+        object-fit: cover;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="pres">
+      <img
+        src="https://rickandmortyapi.com/api/character/avatar/135.jpeg"
+        alt="Garment District Rick"
+      />
+      <img
+        src="https://rickandmortyapi.com/api/character/avatar/446.jpeg"
+        alt="Jerryboree Receptionist"
+      />
+      <img
+        src="https://rickandmortyapi.com/api/character/avatar/524.jpeg"
+        alt="Kirkland Brand Mr. Meeseeks"
+      />
+      <img
+        src="https://rickandmortyapi.com/api/character/avatar/705.jpeg"
+        alt="Squid Costume Jerry"
+      />
+    </div>
+  </body>
+  <script src="./jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://malsup.github.io/jquery.cycle.all.js"></script>
+
+  <script type="text/javascript">
+    $(document).ready(function () {
+      $(".pres").cycle({
+        fx: "fade",
+        timeout: 2000,
+      });
+    });
+  </script>
+</html>
